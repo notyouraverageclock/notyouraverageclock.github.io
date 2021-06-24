@@ -1,6 +1,7 @@
 const default_color = '#000000';
 const activated_color = '#FAFCFC';
 const element = document.getElementById('clock');
+document.getElementById('时间').style.color = activated_color
 
 function startTime() {
   // Date('December 17, 1995 12:25:00')
@@ -614,5 +615,5 @@ function startTime() {
   }
 
   document.getElementById("txt").innerHTML = h + "h " + m + "m " + today;
-  let t = setTimeout(startTime, 1000);
+  setTimeout(startTime, 1000);
 }
