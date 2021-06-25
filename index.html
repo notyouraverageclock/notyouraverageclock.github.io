@@ -1,59 +1,61 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html">
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
 
-  <meta name="theme-color" content="#fafafa">
+    <meta name="theme-color" content="#fafafa">
 </head>
 
 
 <body onload='startTime()'>
-<div class="clockbox theme_black" id="clock">
-  <p
-    style='font-size:3vmax; letter-spacing:2vmax; margin-right:-2vmax; line-height:5.2vmax;
-    margin-top: 4vmax;  margin-bottom: 5vmax; text-shadow:.08vmax .1vmax #181818;' class="unselectable">
-    <span id='时间'>现在时间</span>是<span id='凌晨'>凌晨</span><span id='中'>中</span>
-    <br><span id='六点'>六点</span><span id='整'>整</span><span id='下午'>下午</span><span id='晚'>晚</span><span
-    id='上g2'>上</span><span id='午h2'>午</span>
-    <br><span id='十a3'>十</span><span id='一b3'>一</span><span id='点c3'>点</span><span id='半d3'>半</span><span
-    id='两点'>两点</span><span id='一刻'>一刻</span>
-    <br><span id='三a4'>三</span><span id='四b4'>四</span><span id='五c4'>五</span><span id='点d4'>点</span><span
-    id='八点'>八</span><span id='十f5'>十</span><span id='二g5'>二</span><span id='点h5'>点</span>
-    <br><span id='七点'>七点</span><span id='半e4'>半</span><span id='九点'>九</span><span id='点e5'>点</span><span
-    id='二十'>二十</span><span id='五h4'>五</span>
-    <br><span id='三a6'>三</span><span id='十b6'>十</span><span id='分'>分</span><span id='一d6'>一</span><span
-    id='四e6'>四</span><span id='零'>零</span><span id='五g6'>五</span><span id='一h6'>一</span>
-    <br><span id='四a7'>四<span id='十b7'>十</span></span><span id='五c7'>五</span><span id='二d7'>二</span><span
-    id='九分'>九</span><span
-    id='八分'>八</span><span id='三g7'>三</span><span id='二h7'>二</span>
-    <br><span id='五a8'>五<span id='十b8'>十</span></span><span id='七c8'>七</span><span id='三d8'>三</span><span
-    id='六e8'>六</span><span
-    id='六f8'>六</span><span id='四g8'>四</span><span id='七h8'>七</span>
-  </p>
+
+<div class="clockBox">
+    <p
+            class="unselectable" style='font-size:3vmax; letter-spacing:2vmax; margin-right:-2vmax; line-height:5vmax;
+    margin-top: 2vmax;  margin-bottom: 5vmax;' id="clock">
+        <span id='时间'>现在时间</span>是<span id='凌晨'>凌晨</span><span id='中'>中</span>
+        <br><span id='六点'>六点</span><span id='整'>整</span><span id='下午'>下午</span><span id='晚'>晚</span><span
+            id='上g2'>上</span><span id='午h2'>午</span>
+        <br><span id='十a3'>十</span><span id='一b3'>一</span><span id='点c3'>点</span><span id='半d3'>半</span><span
+            id='两点'>两点</span><span id='一刻'>一刻</span>
+        <br><span id='三a4'>三</span><span id='四b4'>四</span><span id='五c4'>五</span><span id='点d4'>点</span><span
+            id='八点'>八</span><span id='十f5'>十</span><span id='二g5'>二</span><span id='点h5'>点</span>
+        <br><span id='七点'>七点</span><span id='半e4'>半</span><span id='九点'>九</span><span id='点e5'>点</span><span
+            id='二十'>二十</span><span id='五h4'>五</span>
+        <br><span id='三a6'>三</span><span id='十b6'>十</span><span id='分'>分</span><span id='一d6'>一</span><span
+            id='四e6'>四</span><span id='零'>零</span><span id='五g6'>五</span><span id='一h6'>一</span>
+        <br><span id='四a7'>四<span id='十b7'>十</span></span><span id='五c7'>五</span><span id='二d7'>二</span><span
+            id='九分'>九</span><span
+            id='八分'>八</span><span id='三g7'>三</span><span id='二h7'>二</span>
+        <br><span id='五a8'>五<span id='十b8'>十</span></span><span id='七c8'>七</span><span id='三d8'>三</span><span
+            id='六e8'>六</span><span
+            id='六f8'>六</span><span id='四g8'>四</span><span id='七h8'>七</span>
+    </p>
 
 </div>
 
+
 <div>
-  <p>
-    to lazy to type anything else
-  </p>
-  <div class="" id='txt'>time</div>
+    <p>
+        这是一个没有感情的钟表。
+        <div class="" id='txt' style="color: #F1EBA9"></div>
+    </p>
 </div>
 
 
